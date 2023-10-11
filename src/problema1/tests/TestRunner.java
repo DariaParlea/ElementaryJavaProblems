@@ -8,9 +8,13 @@ public class TestRunner {
         MaximalRoundNoteTest maximalRoundNoteTest = new MaximalRoundNoteTest();
 
         notenProzessorTest.addToArrayTest();
-        notenProzessorTest.testNichtAusreichendeNoten();
-        notenCalculatorTest.testDurchschnittswert();
-        notenRounderTest.testAbgerundeteNote();
-        maximalRoundNoteTest.testMaximaleAbgerundeteNote();
+        notenProzessorTest.testNichtAusreichendeNoten_expected();
+        notenProzessorTest.testNichtAusreichendeNoten_unexpected();
+        notenCalculatorTest.testDurchschnittswert_expected();
+        notenCalculatorTest.testDurchschnittswert_unexpected();
+        notenRounderTest.testAbgerundeteNote_expected();
+        notenRounderTest.testAbgerundeteNote_unexpected();
+        maximalRoundNoteTest.testMaximaleAbgerundeteNote_expected();
+        maximalRoundNoteTest.testMaximaleAbgerundeteNote_unexpected();
     }
 }

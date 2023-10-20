@@ -19,6 +19,6 @@ public class MinimaleZahlTest {
         float expectedOutput = 0.0f;
         float result = minzahl.minzahl(input);
 
-        //assert expectedOutput == result : "testMinimalZahl_unexpected - Failed";
+        assert expectedOutput == result : "testMinimalZahl_unexpected - Failed";
     }
 }

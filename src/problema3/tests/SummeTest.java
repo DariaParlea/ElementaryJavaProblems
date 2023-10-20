@@ -21,7 +21,7 @@ public class SummeTest {
         int[] num2 = {1};
 
         int[] result = sum.add_numbers(num1, num2);
-        //assert result == null : "test_addition_unexpected failed!";
+        assert result == null : "test_addition_unexpected failed!";
 
     }
 }

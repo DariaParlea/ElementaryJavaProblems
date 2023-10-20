@@ -20,6 +20,6 @@ class MaximaleSummeTest{
         float expectedOutput = 0.0f;
         float result = maxsumme.maxsumme(input);
 
-        //assert expectedOutput == result : "testMaximalSumme_unexpected - Failed";
+        assert expectedOutput == result : "testMaximalSumme_unexpected - Failed";
     }
 }

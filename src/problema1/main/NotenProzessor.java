@@ -7,7 +7,7 @@ public class NotenProzessor {
         for (int i = 0; i < note.length; i++) {
             if (note[i] < 0 || note[i] > 100) {
                 System.out.println("Noten soll zwischen 0 und 100 sein.");
-                return null;
+                return new int[0];
             }
         }
 
@@ -21,56 +21,6 @@ public class NotenProzessor {
         return finaleNoten;
     }
 
-//    public float durchschnittswert(int[] note){
-//        for (int i = 0; i < note.length; i++) {
-//            if (note[i] < 0 || note[i] > 100) {
-//                System.out.println("Noten soll zwischen 0 und 100 sein.");
-//                return 0;
-//            }
-//        }
-//
-//        float durch_wert;
-//        int sum = 0;
-//
-//        for(int i = 0; i < note.length; i++){
-//            sum = sum + round(note[i]);
-//        }
-//
-//        durch_wert = sum/note.length;
-//        return durch_wert;
-//    }
-
-//    public int[] abgerundeteNote(int[] note){
-//        for (int i = 0; i < note.length; i++) {
-//            if (note[i] < 0 || note[i] > 100) {
-//                System.out.println("Noten soll zwischen 0 und 100 sein.");
-//                return null;
-//            }
-//        }
-//
-//        int[] abgerundeteNoten = new int[0];
-//
-//        for (int i = 0; i < note.length; i++) {
-//            abgerundeteNoten = addToArray(abgerundeteNoten, round(note[i]));
-//        }
-//        return abgerundeteNoten;
-//    }
-
-//    public int maximaleAbgerundeteNote(int[] note){
-//        for (int i = 0; i < note.length; i++) {
-//            if (note[i] < 0 || note[i] > 100) {
-//                System.out.println("Noten soll zwischen 0 und 100 sein.");
-//                return 0;
-//            }
-//        }
-//
-//        int maxim = 0;
-//        for(int i = 0; i < note.length; i++){
-//            if(round(note[i]) > maxim)
-//                maxim = round(note[i]);
-//        }
-//        return maxim;
-//    }
     public static int round(int note) {
         if (note < 38) {
             return note;

@@ -22,7 +22,7 @@ public class KaufenTest {
         int expectedMoneySpent = -1;
 
         int result = k.money_spent(budget, keyboards, usb);
-        //assert result == expectedMoneySpent : "testMoneySpent_unexpected test failed!";
+        assert result == expectedMoneySpent : "testMoneySpent_unexpected test failed!";
     }
 
 }

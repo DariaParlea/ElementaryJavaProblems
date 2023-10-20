@@ -20,7 +20,7 @@ public class USBkaufenTest {
         int expectedMaxPrice = -1;
 
         int result = uk.teuersteUSBkaufen(preise, budget);
-        //assert result == expectedMaxPrice : "testTeuersteUSBkaufen_unexpecte test failed!";
+        assert result == expectedMaxPrice : "testTeuersteUSBkaufen_unexpecte test failed!";
     }
 
 }

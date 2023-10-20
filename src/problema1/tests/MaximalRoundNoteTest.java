@@ -17,9 +17,9 @@ class MaximalRoundNoteTest{
     public void testMaximaleAbgerundeteNote_unexpected() {
         MaximalRoundNote prozessor = new MaximalRoundNote();
         int[] input = {75, 60, 105, -10, 40};
-        int expectedOutput = 105;
+        int expectedOutput = 0;
         int result = prozessor.maximaleAbgerundeteNote(input);
 
-        //assert expectedOutput == result : "testMaximaleAbgerundeteNote_unexpected - Failed";
+        assert expectedOutput == result : "testMaximaleAbgerundeteNote_unexpected - Failed";
     }
 }

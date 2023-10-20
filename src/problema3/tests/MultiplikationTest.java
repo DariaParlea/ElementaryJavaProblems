@@ -24,7 +24,7 @@ public class MultiplikationTest {
 
         int[] result = mul.multiply_number(num1, digit);
         for (int i = 0; i < result.length; i++) {
-            //assert result[i] == expectedProduct[i] : "Unexpected multiplication test failed!";
+            assert result[i] == expectedProduct[i] : "Unexpected multiplication test failed!";
         }
     }
 }

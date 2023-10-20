@@ -20,6 +20,6 @@ class NotenCalculatorTest{
         float expectedOutput = 0.0f;
         float result = prozessor.durchschnittswert(input);
 
-        //assert expectedOutput == result : "testDurchschnittswert_unexpected - Failed";
+        assert expectedOutput == result : "testDurchschnittswert_unexpected - Failed";
     }
 }

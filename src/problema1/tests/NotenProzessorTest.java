@@ -35,10 +35,10 @@ class NotenProzessorTest {
     public void testNichtAusreichendeNoten_unexpected() {
         NotenProzessor prozessor = new NotenProzessor();
         int[] input = {75, 60, 105, -10, 40};
-        int[] expectedOutput = {};
+        int[] expectedOutput = new int[0];
         int[] result = prozessor.nichtAusreichendeNoten(input);
 
-        //assert arrayEquals(expectedOutput, result) : "testNichtAusreichendeNoten_uenexpected - Failed";
+        assert arrayEquals(expectedOutput, result) : "estNichtAusreichendeNoten_uenexpected - Failed";
     }
 
     public static boolean arrayEquals(int[] arr1, int[] arr2) {

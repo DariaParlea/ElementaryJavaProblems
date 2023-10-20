@@ -20,7 +20,7 @@ class MaximaleZahlTest{
         float expectedOutput = 0.0f;
         float result = maxzahl.maxzahl(input);
 
-        //assert expectedOutput == result : "testMaximaleZahl_unexpected - Failed";
+        assert expectedOutput == result : "testMaximaleZahl_unexpected - Failed";
     }
 
 }

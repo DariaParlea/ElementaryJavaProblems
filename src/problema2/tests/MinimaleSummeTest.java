@@ -19,6 +19,6 @@ public class MinimaleSummeTest {
         float expectedOutput = 0.0f;
         float result = minsumme.minsumme(input);
 
-        //assert expectedOutput == result : "testMinimalSumme_unexpected - Failed";
+        assert expectedOutput == result : "testMinimalSumme_unexpected - Failed";
     }
 }

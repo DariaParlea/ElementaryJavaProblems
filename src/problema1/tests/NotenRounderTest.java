@@ -17,10 +17,11 @@ class NotenRounderTest{
     public void testAbgerundeteNote_unexpected() {
         NotenRounder prozessor = new NotenRounder();
         int[] input = {75, 60, 105, -10, 40};
-        int[] expectedOutput = {75, 60, 105, 0, 40};
+        int[] expectedOutput = new int[0];
         int[] result = prozessor.abgerundeteNote(input);
 
-        //assert arrayEquals(expectedOutput, result) : "testAbgerundeteNote_unexpected - Failed";
+        assert arrayEquals(expectedOutput, result) : "testAbgerundeteNote_unexpected - Failed";
     }
+
 
 }

@@ -19,12 +19,12 @@ public class DiferenzTest {
     @Test
     public void test_substraction_unexpected(){
             int[] num1 = {1, 2, 3, 4};
-            int[] num2 = {5, 6, 7, 8};
+            int[] num2 = {5, 6, 7};
             int[] expectedDifference = {0, 0, 0, 0};
 
             int[] result = dif.substract_numbers(num1, num2);
             for (int i = 0; i < result.length; i++) {
-                //assert result[i] == expectedDifference[i] : "Unexpected subtraction test failed!";
+                assert result[i] == expectedDifference[i] : "Unexpected subtraction test failed!";
             }
     }
 }

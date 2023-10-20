@@ -22,6 +22,6 @@ public class DivisionTest {
         int digit = 0;
 
         int[] result = div.divide_number(num1, digit);
-        //assert result == null : "Unexpected integer division test failed!";
+        assert result == null : "Unexpected integer division test failed!";
     }
 }

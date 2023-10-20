@@ -4,6 +4,16 @@ public class TeuersteGegenstand {
     public int teuerstegegenstand(int[] tastatur, int[] usb){
         int maxim_t = Integer.MIN_VALUE;
         for (int i = 0; i < tastatur.length; i++)
+            if(tastatur[i]<0){
+                System.out.println("Preis soll positiv sein");
+                return -1;
+            }
+        for (int i = 0; i < usb.length; i++)
+            if(usb[i]<0){
+                System.out.println("Preis soll positiv sein");
+                return -1;
+            }
+        for (int i = 0; i < tastatur.length; i++)
             if (tastatur[i] > maxim_t)
                 maxim_t = tastatur[i];
 

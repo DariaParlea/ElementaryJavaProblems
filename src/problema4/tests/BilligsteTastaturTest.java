@@ -15,11 +15,11 @@ public class BilligsteTastaturTest {
 
     @Test
     public void testBilligsteTastatur_unexpected() {
-        int[] options = {70, 80, 90, 100};
-        int expectedMinimumPrice = Integer.MAX_VALUE;
+        int[] options = {70, 80, -90, 100};
+        int expectedMinimumPrice = -1;
 
         int result = bt.billigsteTastatur(options);
-        //assert result == expectedMinimumPrice : "testBilligsteTastatur_unexpected test failed!";
+        assert result == expectedMinimumPrice : "testBilligsteTastatur_unexpected test failed!";
     }
 
 }

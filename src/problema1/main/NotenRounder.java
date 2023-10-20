@@ -7,7 +7,7 @@ public class NotenRounder {
         for (int i = 0; i < note.length; i++) {
             if (note[i] < 0 || note[i] > 100) {
                 System.out.println("Noten soll zwischen 0 und 100 sein.");
-                return null;
+                return new int[0];
             }
         }
 

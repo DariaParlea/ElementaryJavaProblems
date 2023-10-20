@@ -15,12 +15,12 @@ public class TeuersteGegenstandTest {
 
     @Test
     public void testTeuersteGegenstand_unexpected() {
-        int[] tastatur = {40, 50, 60};
+        int[] tastatur = {40, 50, -60};
         int[] usb = {8, 12, 70};
-        int expectedMaxPrice = 60;
+        int expectedMaxPrice = -1;
 
         int result = tg.teuerstegegenstand(tastatur, usb);
-        //assert result == expectedMaxPrice : "testTeuersteGegenstand_unexpected test failed!";
+        assert result == expectedMaxPrice : "testTeuersteGegenstand_unexpected test failed!";
     }
 
 }

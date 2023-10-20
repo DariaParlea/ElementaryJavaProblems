@@ -10,6 +10,7 @@ public class Main {
         int[] num1 = new int[] {2, 3, 6, 0, 0, 0, 0, 0, 0};
         int[] num2 = new int[] {1, 1, 8, 0, 0, 0, 0, 0, 0};
 
+
         System.out.println(Arrays.toString(sum.add_numbers(num1,num2)));
         System.out.println(Arrays.toString(dif.substract_numbers(num1,num2)));
         System.out.println(Arrays.toString(mul.multiply_number(num2,2)));

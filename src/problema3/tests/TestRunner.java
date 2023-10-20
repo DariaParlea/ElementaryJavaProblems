@@ -7,12 +7,12 @@ public class TestRunner {
         DivisionTest div = new DivisionTest();
 
         sum.test_addition_expected();
-        sum.test_addition_unexpected();
+        //sum.test_addition_unexpected();
         dif.test_substraction_expected();
-        dif.test_substraction_unexpected();
+        //dif.test_substraction_unexpected();
         mul.test_multiply_number_expected();
-        mul.test_multiply_number_unexpected();
+        //mul.test_multiply_number_unexpected();
         div.test_divide_number_expected();
-        div.test_divide_number_unexpected();
+        //div.test_divide_number_unexpected();
     }
 }

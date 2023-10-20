@@ -13,7 +13,7 @@ public class MinimaleZahlTest {
     public void testMinimaleZahl_unexpected() {
         MinimaleZahl minzahl = new MinimaleZahl();
         int[] input = {5, -10, 3, 8, -7};
-        float expectedOutput = 0.0f; // Negative numbers present, so the result should be 0
+        float expectedOutput = 0.0f;
         float result = minzahl.minzahl(input);
 
         assert expectedOutput == result : "testMinimalZahl_unexpected - Failed";
